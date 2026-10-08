@@ -1,0 +1,10 @@
+# One-click deploy on Render's free plan: https://render.com/deploy
+services:
+  - type: web
+    name: dayline
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/catalog
+    envVars:
+      - key: NODE_ENV
+        value: production

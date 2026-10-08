@@ -1,0 +1,10 @@
+{
+  "name": "callpilot",
+  "version": "1.0.0",
+  "description": "Temporary AI phone agents. Create one, share it, it expires in 24 hours.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": { "start": "node src/server.js", "dev": "node --watch src/server.js", "test": "node test/smoke.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "bcryptjs": "^2.4.3", "better-sqlite3": "^11.3.0", "express": "^4.21.0" }
+}
